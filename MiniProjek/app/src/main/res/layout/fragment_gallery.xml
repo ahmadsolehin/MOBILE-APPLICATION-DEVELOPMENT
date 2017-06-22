@@ -1,0 +1,98 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="@color/textColorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputLayoutTaskName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--app:errorTextAppearance="@style/error_appearance"-->
+
+            <EditText
+                android:id="@+id/TasknameField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Task Name"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+                        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputLayoutTaskDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--app:errorTextAppearance="@style/error_appearance"-->
+
+            <EditText
+                android:id="@+id/TaskDescriptionField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Task Description"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputLayoutFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--app:errorTextAppearance="@style/error_appearance"-->
+
+            <EditText
+                android:id="@+id/TaskDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Task Date"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/inputLayoutEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--app:errorTextAppearance="@style/error_appearance">-->
+
+            <EditText
+                android:id="@+id/TaskTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Task Time"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:background="@color/colorPrimary"
+            android:text="Save"
+            android:onClick="AddData"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
